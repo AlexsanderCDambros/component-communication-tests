@@ -1,0 +1,5 @@
+<button (click)="enviaNgrx(i)" *ngFor="let i of [1,2,3,4,5]">Envia {{ i }} via ngrx</button>
+<hr aria-hidden="true">
+<button [routerLink]="['/dois']" [state]="{ valorRota: i }" *ngFor="let i of [1,2,3,4,5]">Envia {{ i }} via rota</button>
+<hr aria-hidden="true">
+<button (click)="enviaService(i)" *ngFor="let i of [1,2,3,4,5]">Envia {{ i }} via rota</button>
